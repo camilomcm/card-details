@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -33,6 +34,29 @@ body {
 
 label, input[type="button"] {
     display: block;
+}
+ label {
+    color: Very dark violet: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+ }
+
+input {
+    width: 100%;
+}
+
+#form-field-container {
+    display: flex;
+    background-color: purple;
+}
+
+.form-field > input {
+    width: 30%;
+}
+
+.form-field.cvc {
+    background-color: red;
+    width: 70%;
 }
 
 /* Mirar despúes */
