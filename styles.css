@@ -23,6 +23,53 @@ body {
 
 #card-container {
     margin-right: 60px;
+    position: relative;
+}
+
+#card-logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#card-number {
+    position: absolute;
+    top: 135px;
+    left: 30px;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    color: white;
+}
+
+#card-owner {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 2.5px;
+}
+
+#exp-date {
+    position: absolute;
+    top: 200px;
+    left: 365px;
+    color: white;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 2.5px;
+}
+
+#verification-code {
+    position: absolute;
+    bottom: 115px;
+    right: 55px;
+    color: white;
+    font-weight: 300;
+    font-size: 0.85rem;
+    letter-spacing: 2.5px;
 }
 
 .card {
@@ -30,11 +77,11 @@ body {
 }
 
 #card-front {
-    margin: 0 0 40px 0;
+    margin: 0 0 35px 0;
 }
 
 #card-back {
-    margin: 40px 0 0 100px;
+    margin: 35px 0 0 100px;
 }
 
 #form-container {
