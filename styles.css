@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
     position: absolute;
     top: 135px;
     left: 30px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 3px;
     color: white;
 }
@@ -55,7 +56,7 @@ body {
 #exp-date {
     position: absolute;
     top: 200px;
-    left: 365px;
+    left: 360px;
     color: white;
     font-weight: 300;
     font-size: 0.85rem;
@@ -115,7 +116,7 @@ input {
 }
 
 input:focus {
-    outline: none;
+    outline: 1px solid hsl(278, 68%, 11%);
 }
 
 ::placeholder {
@@ -150,6 +151,12 @@ input:focus {
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     border-style: none;
+}
+
+#number-alert {
+    margin: -20px 0 25px 0;
+    font-size: 0.75rem;
+    color: #d0342c;
 }
 
 /* Mirar despúes */
