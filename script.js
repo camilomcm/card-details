@@ -17,28 +17,27 @@ let form = document.querySelector('form');
 
 btnConfirm.addEventListener('click', e => {
     e.preventDefault();
+    
+    var inputs = document.getElementsByTagName('input');
+    var warnings = document.getElementsByClassName('error');
+    while (warnings.length > 0) {
+        warnings[0].parentNode.removeChild(warnings[0]);
+    }
 
-    let pBlank = document.createElement('p');
-    pBlank.textContent = 'Cant be blank';
-    pBlank.classList.add('error');
-    const errors = document.querySelectorAll('.error');
-
-    // if(inputName.textContent === '') { 
-    //     if(errors.length === 0) {
-    //         form.insertBefore(pBlank,document.querySelector('#card-label'));
-    //         // setTimeout(() => {
-    //         //     pBlank.remove();
-    //         // }, 3000);
-    //     }
-    // } else {
-    //     console.log('Niceeee')
-    // }
-
-    console.log(inputName.innerHTML)
-})
-
-let numberAlert = document.querySelector('#number-alert');
-
+    // Loop through each input element
+    for (var i = 0; i < inputs.length; i++) {
+        // Check if the input element is required and if it's empty
+        if (inputs[i].hasAttribute('required') && inputs[i].value === '' && inputs[i].id !== 'mm') {
+            var warning = document.createElement('p');
+            warning.innerHTML = 'Can\'t be blank';
+            warning.classList.add('error');
+            inputs[i].parentNode.insertBefore(warning, inputs[i].nextSibling);
+            setTimeout(() => {
+                warning.parentNode.removeChild(warning);
+            }, 3000);
+        }
+    }
+})  
 
 inputName.addEventListener('input', (e) => {
     e.preventDefault();
@@ -53,9 +52,14 @@ inputNumber.addEventListener('input', (e) => {
     e.preventDefault();
     if(e.target.value === '') {
         cardNumber.textContent = '0000 0000 0000 0000';
-    } else if(isNaN(e.target.value)) {
-        numberAlert.textContent = 'Wrong format, numbers only';
-    } else {
+    } 
+    // else if(isNaN(e.target.value)) {
+    //     numberAlert.textContent = 'Wrong format, numbers only';
+    //     setTimeout(() => {
+    //         numberAlert.remove();
+    //     }, 3000);
+    // } 
+    else {
         cardNumber.textContent = e.target.value;
     }    
 });

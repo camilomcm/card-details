@@ -167,6 +167,12 @@ input:focus {
     color: #d0342c;
 }
 
+.error {
+    font-size: 0.65rem;
+    margin: -20px 0 10px 0;
+    color: #d0342c;
+}
+
 /* Mirar despúes */
 #result {
     display: none;
