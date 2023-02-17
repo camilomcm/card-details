@@ -93,11 +93,8 @@ body {
     align-items: center;
 }
 
-label, input[type="button"] {
-    display: block;
-}
-
 label {
+    display: block;
     color: Very dark violet: hsl(278, 68%, 11%);
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -141,13 +138,15 @@ input:focus {
     width: 100%;
 }
 
-#confirm {
+button {
+    width: 100%;
     padding: 15px 0 15px 0;
     margin-top: 15px;
     font-size: 1.1rem;
-    display: flex;
+    border-radius: 10px;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     border-style: none;
@@ -155,7 +154,7 @@ input:focus {
     transition: background-color 0.5s;
 }
 
-#confirm:hover {
+button:hover {
     cursor: pointer;
     background-color: #fe346e;
 }
