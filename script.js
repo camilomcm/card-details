@@ -17,6 +17,7 @@ let form = document.querySelector('form');
 
 let result = document.querySelector('#result');
 let formContainer = document.querySelector('#form-container');
+let continue = document.querySelector('#continue');
 
 inputName.addEventListener('input', (e) => {
     e.preventDefault();
