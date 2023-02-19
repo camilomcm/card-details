@@ -118,7 +118,7 @@ input:focus {
 
 ::placeholder {
     font-size: 1.2rem;
-    color: hsl(270, 3%, 87%)
+    color: hsl(270, 3%, 87%);
 }
 
 #form-field-container {
@@ -171,7 +171,7 @@ button:hover {
 
 /* Mirar despúes */
 #result {
-    background-color: blue;
+    /* background-color: blue; */
     width: 400px;
     margin-left: 60px;
     display: flex;
@@ -181,11 +181,28 @@ button:hover {
 
 #icon-complete {
     display: block;
+    margin-bottom: 25px;
 }
 
 #sub-container {
-    background-color: orange;
+    /* background-color: orange; */
     text-align: center;
+    width: 100%;
+}
+
+#thanks {
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 17px; 
+}
+
+#message {
+    font-size: 0.95rem;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 30px;
 }
 
 .hidden {
