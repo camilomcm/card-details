@@ -17,7 +17,7 @@ body {
 }
 
 #big-container {
-    /* background-color: yellow; */
+    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
@@ -144,9 +144,6 @@ button {
     margin-top: 15px;
     font-size: 1.1rem;
     border-radius: 10px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     border-style: none;
@@ -174,6 +171,11 @@ button:hover {
 
 /* Mirar despúes */
 #result {
+    background-color: blue;
+
+}
+
+.hidden {
     display: none;
 }
 
