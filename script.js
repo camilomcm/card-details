@@ -16,6 +16,7 @@ let btnConfirm = document.querySelector('#confirm');
 let form = document.querySelector('form');  
 
 let result = document.querySelector('#result');
+let formContainer = document.querySelector('#form-container');
 
 inputName.addEventListener('input', (e) => {
     e.preventDefault();
@@ -54,7 +55,6 @@ inputNumber.addEventListener('blur', e => {
         }, 5000);
     }
 });
-
 
 inputMonth.addEventListener('input', (e) => {
     e.preventDefault();
@@ -117,9 +117,7 @@ btnConfirm.addEventListener('click', e => {
     }
       
     if (allInputsHaveValues) {
-        form.classList.add('hidden');
+        formContainer.remove();
         result.classList.remove('hidden');
     }
-
-
 });

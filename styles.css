@@ -17,7 +17,7 @@ body {
 }
 
 #big-container {
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
 }
@@ -172,7 +172,20 @@ button:hover {
 /* Mirar despúes */
 #result {
     background-color: blue;
+    width: 400px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#icon-complete {
+    display: block;
+}
+
+#sub-container {
+    background-color: orange;
+    text-align: center;
 }
 
 .hidden {
