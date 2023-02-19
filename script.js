@@ -28,20 +28,33 @@ inputNumber.addEventListener('input', (e) => {
     e.preventDefault();
     if(e.target.value === '') {
         cardNumber.textContent = '0000 0000 0000 0000';
-    }  else {
+    } else {
         cardNumber.textContent = e.target.value;
-        validateCardNumber(e.target.value);
     }    
 });
 
-function validateCardNumber(number) {
-    let regEx = /^5[1-5][0-9]{14}$|^2(?:2(?:2[1-9]|[3-9][0-9])|[3-6][0-9][0-9]|7(?:[01][0-9]|20))[0-9]{12}$/;
-    if(number.match(regEx)) {
-        console.log('Niceeee')
+inputNumber.addEventListener('blur', e => {
+    e.preventDefault();
+    // let numberPattern = /^(\d{4})(\s)\1\2\1\2\1$/;
+    let numberPattern = /^\d+\s\d+\s\d+\s\d+$/;
+    if(!numberPattern.test(inputNumber.value)) {
+        let warning = document.createElement('p');
+        warning.textContent = 'Wrong format';
+        warning.classList.add('error');
+
+        const error = document.querySelectorAll('.error');
+        if(error.length === 0) {
+            inputNumber.parentNode.insertBefore(warning, inputNumber.nextSibling);
+        }
+
+        setTimeout(function() {
+            warning.remove();
+        }, 5000);
     } else {
-        console.log('Enter a valid number');
+        console.log('Niceeee')
     }
-}
+});
+
 
 inputMonth.addEventListener('input', (e) => {
     e.preventDefault();
@@ -79,7 +92,6 @@ btnConfirm.addEventListener('click', e => {
     let warnings = document.querySelectorAll('.error');
     for (let i = 0; i < warnings.length; i++) {
         warnings[i].remove();
-        
     }
 
     // Loop through each input element
