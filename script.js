@@ -91,6 +91,7 @@ btnConfirm.addEventListener('click', e => {
     let inputs = document.getElementsByTagName('input');
     let warning;
     let allInputsHaveValues = true;
+    let numberPattern = /^\d+\s\d+\s\d+\s\d{4}$/;
 
     let warnings = document.querySelectorAll('.error');
     for (let i = 0; i < warnings.length; i++) {
@@ -108,6 +109,24 @@ btnConfirm.addEventListener('click', e => {
             setTimeout(function() {
                 warning.remove();
             }, 3000);
+        }
+
+        if(inputs[i].id === 'input-number') {
+            if(!numberPattern.test(inputNumber.value)) {
+                e.preventDefault();
+                let warning = document.createElement('p');
+                warning.textContent = 'Wrong format, numbers only';
+                warning.classList.add('error');
+        
+                const error = document.querySelectorAll('.error');
+                if(error.length === 0) {
+                    inputNumber.parentNode.insertBefore(warning, inputNumber.nextSibling);
+                }
+        
+                setTimeout(function() {
+                    warning.remove();
+                }, 3000);
+            }
         }
     };
 
