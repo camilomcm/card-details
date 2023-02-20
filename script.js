@@ -16,8 +16,10 @@ let btnConfirm = document.querySelector('#confirm');
 let form = document.querySelector('form');  
 
 let result = document.querySelector('#result');
+result.style.display = 'none';
+
 let formContainer = document.querySelector('#form-container');
-let continue = document.querySelector('#continue');
+let newForm = document.querySelector('#continue');
 
 inputName.addEventListener('input', (e) => {
     e.preventDefault();
@@ -39,7 +41,6 @@ inputNumber.addEventListener('input', (e) => {
 
 inputNumber.addEventListener('blur', e => {
     e.preventDefault();
-    // let numberPattern = /^(\d{4})(\s)\1\2\1\2\1$/;
     let numberPattern = /^\d+\s\d+\s\d+\s\d{4}$/;
     if(!numberPattern.test(inputNumber.value)) {
         let warning = document.createElement('p');
@@ -118,7 +119,12 @@ btnConfirm.addEventListener('click', e => {
     }
       
     if (allInputsHaveValues) {
-        formContainer.remove();
-        result.classList.remove('hidden');
+        formContainer.style.display = 'none';
+        result.style.display = 'flex';
     }
 });
+
+newForm.addEventListener('click', e => {
+    e.preventDefault()
+    location.reload();
+})
