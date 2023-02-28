@@ -39,24 +39,24 @@ inputNumber.addEventListener('input', (e) => {
     }    
 });
 
-inputNumber.addEventListener('blur', e => {
-    e.preventDefault();
-    let numberPattern = /^\d+\s\d+\s\d+\s\d{4}$/;
-    if(!numberPattern.test(inputNumber.value)) {
-        let warning = document.createElement('p');
-        warning.textContent = 'Wrong format, numbers only';
-        warning.classList.add('error');
+    // inputNumber.addEventListener('blur', e => {
+    //     e.preventDefault();
+    //     let numberPattern = /^\d+\s\d+\s\d+\s\d{4}$/;
+    //     if(!numberPattern.test(inputNumber.value)) {
+    //         let warning = document.createElement('p');
+    //         warning.textContent = 'Wrong format, numbers only';
+    //         warning.classList.add('error');
 
-        const error = document.querySelectorAll('.error');
-        if(error.length === 0) {
-            inputNumber.parentNode.insertBefore(warning, inputNumber.nextSibling);
-        }
+    //         const error = document.querySelectorAll('.error');
+    //         if(error.length === 0) {
+    //             inputNumber.parentNode.insertBefore(warning, inputNumber.nextSibling);
+    //         }
 
-        setTimeout(function() {
-            warning.remove();
-        }, 5000);
-    }
-});
+    //         setTimeout(function() {
+    //             warning.remove();
+    //         }, 3000);
+    //     }
+    // });
 
 inputMonth.addEventListener('input', (e) => {
     e.preventDefault();
@@ -110,28 +110,25 @@ btnConfirm.addEventListener('click', e => {
                 warning.remove();
             }, 3000);
         }
+    };
 
-        if(inputs[i].id === 'input-number') {
-            if(!numberPattern.test(inputNumber.value)) {
-                e.preventDefault();
-                let warning = document.createElement('p');
-                warning.textContent = 'Wrong format, numbers only';
-                warning.classList.add('error');
-        
-                const error = document.querySelectorAll('.error');
-                if(error.length === 0) {
-                    inputNumber.parentNode.insertBefore(warning, inputNumber.nextSibling);
-                }
-        
-                setTimeout(function() {
-                    warning.remove();
-                }, 3000);
-            }
+    if(!numberPattern.test(inputNumber.value)) {
+        let warning = document.createElement('p');
+        warning.textContent = 'Wrong format, numbers only';
+        warning.classList.add('error');
+
+        const error = document.querySelectorAll('.error');
+        if(error.length === 0) {
+            inputNumber.parentNode.insertBefore(warning, inputNumber.nextSibling);
         }
+
+        setTimeout(function() {
+            warning.remove();
+        }, 3000);
     };
 
     for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].value === "") {
+        if (inputs[i].value === "" || !numberPattern.test(inputNumber.value)) {
           allInputsHaveValues = false;
           break;
         }
