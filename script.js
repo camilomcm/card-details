@@ -114,7 +114,7 @@ btnConfirm.addEventListener('click', e => {
 
     if(!numberPattern.test(inputNumber.value)) {
         let warning = document.createElement('p');
-        warning.textContent = 'Wrong format, numbers only';
+        warning.textContent = 'Wrong format, number shuold be like: 1234 5678 9123 4567';
         warning.classList.add('error');
 
         const error = document.querySelectorAll('.error');
@@ -124,7 +124,7 @@ btnConfirm.addEventListener('click', e => {
 
         setTimeout(function() {
             warning.remove();
-        }, 3000);
+        }, 5000);
     };
 
     for (var i = 0; i < inputs.length; i++) {
