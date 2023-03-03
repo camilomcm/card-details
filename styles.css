@@ -256,8 +256,34 @@ a:hover {
     } 
     
     #card-container {
-        margin-right: 60px;
+        margin-bottom: 100px;
+    }
+
+    #card-front {
+        margin: 138px 0 0 0; 
+        position: absolute;
+        z-index: 0;
+    }
+    
+    #card-back {
+        margin: 0 0 0 100px;
         position: relative;
-        background-color: orange;
+        z-index: -1;
+    }
+
+    #card-logo {
+        top: 168px;
+    }
+    
+    #card-number {
+        top: 273px;
+    }
+    
+    #card-owner {
+        top: 338px;
+    }
+    
+    #exp-date {
+        top: 338px;
     }
 }
