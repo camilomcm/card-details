@@ -25,6 +25,7 @@ body {
 #card-container {
     margin-right: 60px;
     position: relative;
+    /* background-color: orange; */
 }
 
 #card-logo {
@@ -232,4 +233,31 @@ a {
 a:hover {
     color: hsl(279, 6%, 55%);
     /* background: white; */
+}
+
+#bg-main-mobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #bg-main {
+        display: none;
+    }
+
+    #bg-main-mobile {
+        display: block;
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+    }
+    
+    #big-container {
+        display: block;    
+    } 
+    
+    #card-container {
+        margin-right: 60px;
+        position: relative;
+        background-color: orange;
+    }
 }
