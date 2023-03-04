@@ -17,21 +17,41 @@ body {
 }
 
 #big-container {
-    /* background-color: yellow; */
+    padding: 0 100px;
+    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
 
 #card-container {
+    width: 50%;
     margin-right: 60px;
     position: relative;
-    /* background-color: orange; */
+    background-color: orange;
+    height: 525px;
 }
 
-#card-logo {
+.card {
+    display: block;
+    max-width: 100%;
+}
+
+#card-front {
+    /* margin: 0 0 35px 0;  */
+}
+
+#card-back {
+    /* margin: 35px 0 0 100px; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* #card-logo {
     position: absolute;
     top: 30px;
     left: 30px;
+    z-index: 2;
 }
 
 #card-number {
@@ -41,6 +61,7 @@ body {
     font-size: 1.6rem;
     letter-spacing: 3px;
     color: white;
+    z-index: 2;
 }
 
 #card-owner {
@@ -52,6 +73,7 @@ body {
     font-weight: 300;
     font-size: 0.85rem;
     letter-spacing: 2.5px;
+    z-index: 2;
 }
 
 #exp-date {
@@ -62,6 +84,7 @@ body {
     font-weight: 300;
     font-size: 0.85rem;
     letter-spacing: 2.5px;
+    z-index: 2;
 }
 
 #verification-code {
@@ -72,23 +95,12 @@ body {
     font-weight: 300;
     font-size: 0.85rem;
     letter-spacing: 2.5px;
-}
-
-.card {
-    display: block;
-}
-
-#card-front {
-    margin: 0 0 35px 0; 
-}
-
-#card-back {
-    margin: 35px 0 0 100px;
-}
+} */
 
 #form-container {
     /* background-color: orange; */
-    width: 400px;
+    /* width: 400px; */
+    width: 40%;
     margin-left: 60px;
     display: flex;
     align-items: center;
@@ -266,13 +278,13 @@ a:hover {
     #card-front {
         margin: 138px 0 0 0; 
         position: absolute;
-        z-index: 0;
+        z-index: 1;
     }
     
     #card-back {
         margin: 0 0 0 100px;
         position: relative;
-        z-index: -1;
+        z-index: 0;
     }
 
     #card-logo {

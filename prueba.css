@@ -1,0 +1,42 @@
+#card-container {
+    width: 75%;
+    position: relative;
+    background-color: orange;
+    margin: auto;
+    height: 540px;
+}
+
+.card {
+    max-width: 100%;
+    height: auto;
+}
+
+#card-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 610px) {
+    #card-container {
+        margin: auto;
+        height: auto;
+        width: 90%;
+    }
+
+    .card {
+        max-width: 85%;
+    }
+    
+    #card-front {
+        margin: 0 40px 0 0; 
+        z-index: 1;
+        position: fixed;
+    }
+    
+    #card-back {
+        margin: 0 40px 0 50px;
+        z-index: 0;
+        position: fixed;
+    }
+}
