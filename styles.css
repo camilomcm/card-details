@@ -257,7 +257,10 @@ a:hover {
     } 
     
     #card-container {
-        margin: 50px 0 200px 0;
+        margin: 50px auto 200px auto;
+        /* background-color: orange; */
+        max-width: 100%;
+        height: auto;
     }
 
     #card-front {
@@ -290,5 +293,21 @@ a:hover {
 
     #form-container {
         margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 590px) {
+    #card-front {
+        /* margin-left: 10px;
+        margin-right: auto; */
+        max-width: 100%; 
+        height: auto;
+    }
+    
+    #card-back {
+        max-width: 100%;
+        height: auto;
+        /* margin-right: 10px;
+        margin-left: auto; */
     }
 }
