@@ -17,34 +17,26 @@ body {
 }
 
 #big-container {
-    padding: 0 100px;
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
 
 #card-container {
-    width: 50%;
     margin-right: 60px;
     position: relative;
     background-color: orange;
-    height: 525px;
 }
 
 .card {
     display: block;
-    max-width: 100%;
 }
 
 #card-front {
-    /* margin: 0 0 35px 0;  */
+    margin: 0 0 35px 0; 
 }
 
 #card-back {
-    /* margin: 35px 0 0 100px; */
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin: 35px 0 0 100px;
 }
 
 /* #card-logo {
@@ -98,9 +90,7 @@ body {
 } */
 
 #form-container {
-    /* background-color: orange; */
-    /* width: 400px; */
-    width: 40%;
+    width: 400px;
     margin-left: 60px;
     display: flex;
     align-items: center;
@@ -251,7 +241,17 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1110px) {
+    #card-container {
+        margin-right: 0;
+    }
+
+    #card-back {
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 930px) {
     #bg-main {
         display: none;
     }
