@@ -24,7 +24,6 @@ body {
 #card-container {
     margin-right: 60px;
     position: relative;
-    background-color: orange;
 }
 
 .card {
@@ -39,7 +38,7 @@ body {
     margin: 35px 0 0 100px;
 }
 
-/* #card-logo {
+#card-logo {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -87,7 +86,7 @@ body {
     font-weight: 300;
     font-size: 0.85rem;
     letter-spacing: 2.5px;
-} */
+}
 
 #form-container {
     width: 400px;
@@ -172,9 +171,7 @@ button:hover {
     color: #d0342c;
 }
 
-/* Mirar despúes */
 #result {
-    /* background-color: blue; */
     width: 400px;
     margin-left: 60px;
     display: flex;
@@ -188,7 +185,6 @@ button:hover {
 }
 
 #sub-container {
-    /* background-color: orange; */
     text-align: center;
     width: 100%;
 }
@@ -234,7 +230,6 @@ a {
 
 a:hover {
     color: hsl(279, 6%, 55%);
-    /* background: white; */
 }
 
 #bg-main-mobile {
@@ -270,9 +265,7 @@ a:hover {
     
     #card-container {
         margin: 50px auto 200px auto;
-        /* background-color: orange; */
         max-width: 100%;
-        height: auto;
     }
 
     #card-front {
@@ -304,22 +297,43 @@ a:hover {
     }
 
     #form-container {
-        margin-bottom: 50px;
+        margin: 0 auto 50px;
     }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 600px) {
     #card-front {
-        /* margin-left: 10px;
-        margin-right: auto; */
-        max-width: 100%; 
-        height: auto;
+        margin-top: 138px;
+        width: 100%; 
     }
     
     #card-back {
-        max-width: 100%;
-        height: auto;
-        /* margin-right: 10px;
-        margin-left: auto; */
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    #card-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: red;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    #card-front {
+        margin: 0px 0 0 0;
+        width: 100%;
+        position: relative;
+    }
+    
+    #card-back {
+        width: 40%;
+        margin: 0 0 0 10px;
     }
 }
