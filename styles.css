@@ -319,17 +319,20 @@ a:hover {
         width: 100%;
         margin: 0;
     }
+
+    #result {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 500px) {
     #bg-main-mobile {
-        height: auto;
+        height: 25%;
     }
 
     #card-container {
-        width: 76%;
-        margin: 120px auto;
-        /* background-color: red; */
+        width: 300px;
+        margin: 58px auto;
     }
 
     #card-front {
@@ -374,11 +377,34 @@ a:hover {
     }
 
     #form-container {
-        margin-top: 100px;
+        margin-top: 120px;
         width: 90%;
-        background-color: yellow;
+        /* background-color: yellow; */
     }
 
+    label {
+        font-size: 0.7rem;
+    }
+
+    ::placeholder {
+        font-size: 1.05rem;
+    }
+
+    input {
+        padding: 12px 0 10px 12px;
+    }
+
+    .attribution {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #result {
+        margin: 130px auto 0;
+        width: 100%;
+    }
 
 }
 
