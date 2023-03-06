@@ -343,8 +343,42 @@ a:hover {
         width: 250px;
     }
 
+    #card-logo {
+        top: 15px;
+        left: 18px;
+        width: 48px;
+    }
+    
+    #card-number {
+        top: 75px;
+        left: 18px;
+        font-size: 0.76rem;
+    }
+    
+    #card-owner {
+        top: 108px;
+        left: 18px;
+        font-size: 0.5rem;
+    }
+    
+    #exp-date, #month, #year {
+        top: 108px;
+        left: 193px;
+        font-size: 0.5rem;
+    }
+
+    #verification-code {
+        top: -16px;
+        left: 245px;
+        font-size: 0.5rem;
+    }
+
     #form-container {
         margin-top: 100px;
+        width: 90%;
+        background-color: yellow;
     }
+
+
 }
 
