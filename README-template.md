@@ -68,9 +68,9 @@ for (let i = 0; i < inputs.length; i++) {
 ### Useful resources
 
 - [JavaScript](https://developer.mozilla.org/es/) - One the main sites documenting web technologies, including CSS, HTML, and JavaScript.
-- [Differente questions](https://stackoverflow.com/) - It's stackoverflo, you know what the deal is :grin:.
+- [Differente questions](https://stackoverflow.com/) - It's stackoverflow, you know what the deal is :grin:.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Camilo Martinez](https://camilomcm.github.io/portfolio/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/camilomcm)
