@@ -14,9 +14,6 @@ This is my solution to the [Interactive card details form challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -52,9 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-This is my first challenge using (vanilla) JavaScript, it took me a little bit of time and this is the result. The main thing I reinforce was the inputs form validation with different conditions, showing the corresponding warningns.
-
-To see how you can add code snippets, see below:
+This is my first challenge using '(vanilla) JavaScript', it took me some time and this is the result. The main concept I reinforced was the inputs form validation with different conditions, showing the corresponding warnings. The latter I made it with the next code snippet:
 
 ```js
 for (let i = 0; i < inputs.length; i++) {
@@ -70,27 +65,12 @@ for (let i = 0; i < inputs.length; i++) {
 };
 ```
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [JavaScript](https://developer.mozilla.org/es/) - One the main sites documenting web technologies, including CSS, HTML, and JavaScript.
+- [Differente questions](https://stackoverflow.com/) - It's stackoverflo, you know what the deal is :grin:.
 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
